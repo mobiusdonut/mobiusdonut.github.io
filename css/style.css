@@ -171,7 +171,7 @@ h1 {
 #toppie, #rightie, #bottie, #leftie {
     background-color:#191919;
     background:url("../img/konigi.png") repeat fixed center #000;
-    z-index:5;
+    z-index:6;
 }
 
 /*--------------------DOT CORNERS--------------------*/
@@ -213,7 +213,7 @@ h1 {
 #ham, #sausage, #spaghetti, #tomato {
     position:fixed;
     background-color:#706385;
-    z-index:6;
+    z-index:5;
 }
 
 #ham {
