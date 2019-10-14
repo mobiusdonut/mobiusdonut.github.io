@@ -363,9 +363,10 @@ aaa::after {
   padding-left:0px;
   height:20px;
   background-color:#FFFFFF;
-  width:80%;
+  width:100%;
   border-radius:25px;
   display:flex;
+  margin-right:80px;
 }
 
 #search {
@@ -379,6 +380,17 @@ aaa::after {
   font-size: 20px;
   margin-top:5px;
   margin-left:10px;
+}
+
+#asterism {
+  background-color:#FFFFFF;
+  width:100vw;
+  height:300px;
+}
+
+#asterwrap {
+  float:right;
+  margin-right:80px;
 }
 
 .typewriter p {
