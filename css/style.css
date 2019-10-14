@@ -1,0 +1,405 @@
+/*--------------------TOOLTIPS--------------------*/
+#s-m-t-tooltip {
+    padding: 4px 9px;
+    margin: 26px 9px 0px 15px;
+    background-color: #4f4362;
+    border-radius:5px;
+    font-family: karla;
+    font-size: calc(12px - 3px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #cbc6e4;
+    z-index:99999999999999999999999999998!important;
+    max-width: calc(450px * 1.25);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+
+/*--------------------SCROLLBAR--------------------*/
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8878a3;
+    border-top:13px solid #090909;
+    border-right:6px solid #090909;
+    border-bottom:13px solid #090909;
+    border-left:6px solid #090909;
+}
+
+::-webkit-scrollbar-track {
+    background:#090909;
+}
+
+/*--------------------TEXT HIGHLIGHT--------------------*/
+::selection {
+  background: #111;
+  color:#ccc;
+}
+
+::-moz-selection {
+  background: #111;
+  color:#ccc;
+}
+
+/*--------------------BASICS--------------------*/
+body {
+  background:#000 url("../img/stars.png");
+  background-attachment:fixed;
+  background-repeat:repeat;
+  color:#999;
+  cursor:normal;
+  font-family:karla;
+  line-height:1.6em;
+  text-align:left;
+  overflow:hidden;
+}
+
+blockquote {
+  padding-left:10px;
+  margin-left:5px;
+  border-left:1px solid;
+  border-color:rgba(153,153,153,0.6);
+  margin:10px;
+}
+
+b, strong {
+  font-weight:bold;
+  color: #b2acbe;
+}
+
+.non a {
+    padding-bottom:0px!important;
+    border-bottom:0px solid transparent!important;
+}
+
+.nonn a {
+    border-bottom:0px solid transparent!important;
+}
+
+i, em, .em {
+  color: #999;
+}
+
+pre, code {
+  white-space:pre-wrap;
+  display:block;
+}
+
+hr {
+    width:70%;
+    border-width:0px;
+    height:1px;
+    background-color:rgba(153,153,153,0.3);
+}
+
+p.npf_quirky, p.npf_chat, p.npf_quote {
+  font-size:calc(12px + 5px);
+  line-height:1em;
+}
+
+/*--------------------LINKS--------------------*/
+a {
+  color:#b997ce;
+  text-decoration:none;
+  cursor:normal;
+  text-decoration:none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  text-decoration:none;
+}
+
+img {
+  opacity:1;
+  text-decoration:none;
+}
+
+h1 {
+    font-size:calc(12px + 1px);
+    font-family:quicksand;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#999;
+    text-align:center;
+}
+
+.pp p:first-child {
+  margin-top:0px;
+}
+
+/*--------------------EDGE--------------------*/
+#toppie {
+    position:fixed;
+    top:0;margin-top:0px;
+    left:0;margin-left:0px;
+    width:100%;
+    height:20px;
+}
+
+#rightie {
+    position:absolute;
+    top:0;margin-top:0px;
+    right:0;margin-right:0px;
+    width:20px;
+    height:100%;
+}
+
+#bottie {
+    position:fixed;
+    bottom:0;margin-bottom:0px;
+    left:0;margin-left:0px;
+    width:100%;
+    height:20px;
+}
+
+#leftie {
+    position:fixed;
+    top:0;margin-top:0px;
+    left:0;margin-left:0px;
+    width:20px;
+    height:100%;
+}
+
+#toppie, #rightie, #bottie, #leftie {
+    background-color:#191919;
+    background:url("../img/konigi.png") repeat fixed center #000;
+    z-index:5;
+}
+
+/*--------------------DOT CORNERS--------------------*/
+#sardine {
+    top:0;left:0;
+    margin-top:calc(20px - 5px - 0.5px);
+    margin-left:calc(20px - 5px - 0.5px);
+    /* 5px = half of 10px i.e box width */
+    /* 0.5px half of 1px i.e border thickness */
+}
+
+#canola {
+    top:0;right:0;
+    margin-top:calc(20px - 5px - 0.5px);
+    margin-right:calc(20px - 5px - 0.5px);
+}
+
+#maple {
+    bottom:0;right:0;
+    margin-bottom:calc(20px - 5px - 0.5px);
+    margin-right:calc(20px - 5px - 0.5px);
+}
+
+#sage {
+    bottom:0;left:0;
+    margin-bottom:calc(20px - 5px - 0.5px);
+    margin-left:calc(20px - 5px - 0.5px);
+}
+
+#sardine, #canola, #maple, #sage {
+    position:fixed;
+    width:10px;height:10px;
+    background:url("../img/konigi.png") repeat fixed center #000;
+    border:1px solid #706385;
+    z-index:7;
+}
+
+/*-----------------SIDE STRINGS-----------------*/
+#ham, #sausage, #spaghetti, #tomato {
+    position:fixed;
+    background-color:#706385;
+    z-index:6;
+}
+
+#ham {
+    left:50%;transform:translateX(-50%);
+    top:0;
+    margin-top:20px;
+    height:1px;
+    width:calc((100vw - 20px * 2) - 10px - 2px);
+    /* 10px = half of box * 2 */
+    /* 2px = 1px border on both boxes */
+}
+
+#sausage {
+    top:50%;transform:translateY(-50%);
+    right:0;
+    margin-right:20px;
+    width:1px;
+    height:calc((100vh - 20px * 2) - 10px - 2px);
+}
+
+#spaghetti {
+    left:50%;transform:translateX(-50%);
+    bottom:0;
+    margin-bottom:20px;
+    height:1px;
+    width:calc((100vw - 20px * 2) - 10px - 2px);
+}
+
+#tomato {
+    top:50%;transform:translateY(-50%);
+    left:0;
+    margin-left:20px;
+    width:1px;
+    height:calc((100vh - 20px * 2) - 10px - 2px);
+}
+
+/*-----------------INNER CONT-----------------*/
+#taco {
+    position:absolute;
+    top:0;left:0;
+    margin-top:40px;
+    margin-left:40px;
+    width:100%;
+    background-color:transparent;
+    overflow-y:auto;
+    overflow-x:hidden;
+    z-index:-1;
+    align:center;
+}
+
+#cream {display:flex;}
+
+#potato {
+    width:210px;
+    height:181px;
+    display:table;
+}
+
+#powder {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.sparkle {display:flex;margin-top:9px;}
+
+.sparkle:first-child {margin-top:4px;}
+
+aaa {
+    font-family:space mono;
+    text-transform:uppercase;line-height:1em;
+    font-size:11px;letter-spacing:1px;
+    color:#aa9db3;
+}
+
+aaa::after {
+    content:"";
+    position:absolute;
+    margin-top:6px;
+    margin-left:6px;
+    width:25px;
+    height:0.7px;
+    background-color:#aa9db3;
+}
+
+.sparkle {
+    margin-left:4px;
+}
+
+.sparkle a {
+    margin-top:-3px;
+    margin-left:37px;
+    font-family:Quicksand;
+    font-weight:bold;font-size:9px;text-transform:uppercase;
+    letter-spacing:1px;
+    color:#c0afdd;
+}
+
+.sparkle a:hover {
+  color:#dfd7ee;
+}
+
+#electric {
+  margin-top:10px;
+  margin-bottom:10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  width:80%;
+  height:45px;
+  scrollbar-color: #c0afdd transparent;
+  scrollbar-width: thin;
+}
+
+#electric a {
+    display:inline;
+    margin:0px 4px;
+    min-width:70px;
+    width:auto;
+    text-align:center;
+    padding:7px 6px;
+    background-color:#FFFFFF;
+    font-family:quicksand;
+    line-height:1em;
+    text-transform:uppercase;
+    font-size:8px;font-weight:bold;letter-spacing:2px;
+    color:#999;
+    border-radius:5px;
+}
+
+#electric a:hover {
+  letter-spacing:3px;
+  background-color:#f3f0f7;
+}
+
+#wrapper {
+  display:flex;
+}
+
+#donut {
+  flex: 0 0 5%;
+  top:50%;
+  margin-right:5px;
+}
+
+#descwrap {
+  padding:15px;
+  padding-top:0px;
+  padding-left:0px;
+  height:20px;
+  background-color:#FFFFFF;
+  width:80%;
+  border-radius:25px;
+  display:flex;
+}
+
+#search {
+  top:50%;
+  padding:3px;
+  flex: 0 0 5%;
+}
+
+.descid {
+  font-family: karla;
+  font-size: 20px;
+  margin-top:5px;
+  margin-left:10px;
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #aa9db3; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+  animation:
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #aa9db3; }
+}
