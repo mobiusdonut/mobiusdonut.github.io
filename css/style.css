@@ -56,7 +56,8 @@ body {
   font-family: karla;
   line-height: 1.6em;
   text-align: left;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 blockquote {
@@ -145,7 +146,7 @@ h1 {
 }
 
 #rightie {
-    position: absolute;
+    position: fixed;
     top: 0;margin-top: 0px;
     right: 0;margin-right: 0px;
     width: 20px;
@@ -209,6 +210,41 @@ h1 {
     z-index: 7;
 }
 
+/*--------------------ASTER DOT CORNERS--------------------*/
+#sardineaster {
+    top: 0;left: 0;
+    margin-top: 40px;
+    margin-left: 5px;
+    /* 5px = half of 10px i.e box width */
+    /* 0.5px half of 1px i.e border thickness */
+}
+
+#canolaaster {
+    top: 0;right: 0;
+    margin-top: 40px;
+    margin-right: 85px;
+}
+
+#mapleaster {
+    bottom: 0;right: 0;
+    top: 343.65px;
+    margin-right: 85px;
+}
+
+#sageaster {
+    bottom: 0;left: 0;
+    top: 343.65px;
+    margin-left: 5px;
+}
+
+#sardineaster, #canolaaster, #mapleaster, #sageaster {
+    position: absolute;
+    width: 10px;height: 10px;
+    background: url("../img/konigi.png") repeat fixed center #000;
+    border: 1px solid #706385;
+    z-index: 8;
+}
+
 /*-----------------SIDE STRINGS-----------------*/
 #ham, #sausage, #spaghetti, #tomato {
     position: fixed;
@@ -263,6 +299,7 @@ h1 {
     overflow-x: hidden;
     z-index: -1;
     align: center;
+    display: block;
 }
 
 #cream {display: flex;}
@@ -390,16 +427,14 @@ aaa::after {
   background: url("../img/bkg.jpg");
   width: auto;
   height: 300px;
-  border-color: #FFFFFF;
-  border-width: 10px;
-  border-radius: 25px;
-  opacity: 0.5;
+  border: 1px solid #999;
 }
 
 #asterwrap {
-  margin-right: 80px;
-  border:10px solid #dfd7ee;
-  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 90px;
+  width: auto;
+  height: auto;
 }
 
 #banner {
@@ -407,18 +442,22 @@ aaa::after {
 }
 
 #strawberry {
-  padding-top: 20px;
   width: auto;
-  margin-right: 80px;
-  overflow-x: auto;
-  text-align:center;
+  height: 40px;
+  overflow: hidden;
+  text-align: right;
+  margin-right: 0px;
+  top: 300px;
+  right: 100px;
+  bottom: 0;
+  position: absolute;
 }
 
 #strawberry ion-icon {
   padding-left: 5px;
   padding-right: 5px;
   font-size: 32px;
-  color: #c0afdd;
+  color: #FFFFFF;
   margin:auto;
 }
 
