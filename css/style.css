@@ -213,7 +213,7 @@ h1 {
 /*--------------------ASTER DOT CORNERS--------------------*/
 #sardineaster {
     top: 0;left: 0;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 5px;
     /* 5px = half of 10px i.e box width */
     /* 0.5px half of 1px i.e border thickness */
@@ -221,19 +221,19 @@ h1 {
 
 #canolaaster {
     top: 0;right: 0;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-right: 85px;
 }
 
 #mapleaster {
     bottom: 0;right: 0;
-    top: 343.65px;
+    top: 353.65px;
     margin-right: 85px;
 }
 
 #sageaster {
     bottom: 0;left: 0;
-    top: 343.65px;
+    top: 353.65px;
     margin-left: 5px;
 }
 
@@ -431,6 +431,7 @@ aaa::after {
 }
 
 #asterwrap {
+  margin-top: 10px;
   margin-left: 10px;
   margin-right: 90px;
   width: auto;
@@ -447,7 +448,7 @@ aaa::after {
   overflow: hidden;
   text-align: right;
   margin-right: 0px;
-  top: 300px;
+  top: 310px;
   right: 100px;
   bottom: 0;
   position: absolute;
