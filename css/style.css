@@ -424,10 +424,10 @@ aaa::after {
 }
 
 #asterism {
-  background: url("../img/bkg.jpg");
+  background-image: linear-gradient(to bottom, rgb(192, 175, 221, 0.6) 0%,rgba(255, 246, 239, 0.1) 100%), url("../img/bkg.jpg");
   width: auto;
   height: 300px;
-  border: 1px solid #999;
+  border: 1px solid #c0afdd;
 }
 
 #asterwrap {
