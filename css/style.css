@@ -211,7 +211,7 @@ h1 {
 }
 
 /*--------------------ASTER DOT CORNERS--------------------*/
-#sardineaster {
+#chloroplast {
     top: 0;left: 0;
     margin-top: 50px;
     margin-left: 5px;
@@ -219,25 +219,25 @@ h1 {
     /* 0.5px half of 1px i.e border thickness */
 }
 
-#canolaaster {
+#mitochondria {
     top: 0;right: 0;
     margin-top: 50px;
     margin-right: 85px;
 }
 
-#mapleaster {
+#ribosome {
     bottom: 0;right: 0;
     top: 353.65px;
     margin-right: 85px;
 }
 
-#sageaster {
+#nucleus {
     bottom: 0;left: 0;
     top: 353.65px;
     margin-left: 5px;
 }
 
-#sardineaster, #canolaaster, #mapleaster, #sageaster {
+#chloroplast, #mitochondria, #ribosome, #nucleus {
     position: absolute;
     width: 10px;height: 10px;
     background: url("../img/konigi.png") repeat fixed center #000;
@@ -383,7 +383,7 @@ aaa::after {
     border-radius: 5px;
 }
 
-#electric a: hover {
+#electric a:hover {
   letter-spacing: 3px;
   background-color: #f3f0f7;
 }
@@ -428,6 +428,7 @@ aaa::after {
   width: auto;
   height: 300px;
   border: 1px solid #c0afdd;
+  text-align: center;
 }
 
 #asterwrap {
