@@ -463,6 +463,20 @@ aaa::after {
   margin:auto;
 }
 
+#burrito {
+  margin-right: 80px;
+}
+
+#potato {
+  background-color: #3f3f3f;
+  padding: 5px;
+}
+
+#powder {
+  border: 1px solid #c0afdd;
+  padding: 3px;
+}
+
 .typewriter p {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #aa9db3; /* The typwriter cursor */
