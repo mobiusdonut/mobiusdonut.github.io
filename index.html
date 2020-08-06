@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>curiosity is a state of being</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <title>kripa kini | web dev + game dev + design</title>
     <link href="https://fonts.googleapis.com/css?family=Karla|Quicksand|Space+Mono" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="img/donut.png"/>
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/donut.png"/>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   </head>
   <body>
-    <div id="toppie"></div>
-    <div id="rightie"></div>
-    <div id="bottie"></div>
-    <div id="leftie"></div>
-    <div id="sardine"></div>
-    <div id="canola"></div>
-    <div id="maple"></div>
-    <div id="sage"></div>
-    <div id="ham"></div>
-    <div id="sausage"></div>
-    <div id="spaghetti"></div>
-    <div id="tomato"></div>
-    <div id="taco">
-      <div id="wrapper">
+    <div id="wrapper">
         <div id="donut">
           <img class="lamp" src="img/donut.png" width=40px height=40px>
         </div>
         <div id="descwrap">
           <img class="search" src="img/search.png" width=35px height=35px>
           <div class="typed_wrap">
-            <span class="typed descid"></span>
+            <span class="descid">mobiusdonut</span>
           </div>
         </div>
-      </div>
-      <div id="asterwrap">
-        <div id="chloroplast"></div>
-        <div id="mitochondria"></div>
-        <div id="ribosome"></div>
-        <div id="nucleus"></div>
-        <div id="asterism">
-          <div id="strawberry">
-            <a href="https://www.instagram.com/mobiusdonut/"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://mobiusdonut.tumblr.com/"><ion-icon name="logo-tumblr"></ion-icon></a>
-            <a href="https://twitter.com/mobiusdonut"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="https://www.youtube.com/channel/UCWWgBgth83qAPLkhWG3fHeA"><ion-icon name="logo-youtube"></ion-icon></a>
-            <a href="https://codepen.io/mobiusdonut"><ion-icon name="logo-codepen"></ion-icon></a>
-            <a href="https://github.com/mobiusdonut/"><ion-icon name="logo-github"></ion-icon></a>
-          </div>
-        </div>
-      </div>
-      <div id="electric">
-        <a href="">woo hoo</a>
-        <a href="">yee yee</a>
-        <a href="">wuh woh</a>
-        <a href="" title="">beep boop</a>
-        <a href="" title="">hee hoo</a>
-      </div>
-      <div id="burrito">
-        <div id="potato">
-          <div id="powder">
-            <div class="sparkle">
-              <aaa>001</aaa>
-              <a href="/snowball.html">Sample link 1</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <div>
+        <div id="info">
+            <div id="profile"></div>
+            <div id="infodesc">
+              <h4>i'm kripa kini, <span class="infotyped"></span></h4>
+              <p>
+                  i'm a high school programmer who makes things in their spare time while navigating the world of web dev!
+                  <br>
+                  find me @mobiusdonut on most places around the web or at mobiusdonut [at] protonmail [dot] com!
+              </p>
+              <div id="strawberry">
+                <a href="https://www.instagram.com/mobiusdonut/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://mobiusdonut.tumblr.com/"><ion-icon name="logo-tumblr"></ion-icon></a>
+                <a href="https://twitter.com/mobiusdonut"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://codepen.io/mobiusdonut"><ion-icon name="logo-codepen"></ion-icon></a>
+                <a href="https://github.com/mobiusdonut/"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="electric">
+      <a href="">all</a>
+      <a href="">2d</a>
+      <a href="">3d</a>
+      <a href="">games</a>
+      <a href="">tools</a>
+      <a href="">writing</a>
+    </div>
+    <script>
+        $(document).ready(() => {
+            var typed = new Typed('.infotyped', {
+                strings: ["perpetually tired game dev", "graphic design nerd", "iced tea enthusiast", "storyteller", "linguist-in-training"],
+                stringsElement: null,
+                typeSpeed: 60,
+                startDelay: 700,
+                backSpeed: 30,
+                backDelay: 700,
+                loop: true,
+                loopCount: Infinity,
+                showCursor: false,
+                attr: null,
+                contentType: 'html',
+            });
+        });
+    </script>
   </body>
 </html>
